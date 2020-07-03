@@ -1,0 +1,33 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu May 28 10:17:57 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "salidas<0>" LOCATE = SITE "L18" LEVEL 1;
+COMP "salidas<1>" LOCATE = SITE "F18" LEVEL 1;
+COMP "salidas<2>" LOCATE = SITE "D17" LEVEL 1;
+COMP "salidas<3>" LOCATE = SITE "D16" LEVEL 1;
+COMP "salidas<4>" LOCATE = SITE "G14" LEVEL 1;
+COMP "salidas<5>" LOCATE = SITE "J17" LEVEL 1;
+COMP "salidas<6>" LOCATE = SITE "H14" LEVEL 1;
+COMP "clk" LOCATE = SITE "B8" LEVEL 1;
+COMP "an<0>" LOCATE = SITE "F17" LEVEL 1;
+COMP "an<1>" LOCATE = SITE "H17" LEVEL 1;
+COMP "an<2>" LOCATE = SITE "C18" LEVEL 1;
+COMP "an<3>" LOCATE = SITE "F15" LEVEL 1;
+COMP "sw<0>" LOCATE = SITE "G18" LEVEL 1;
+COMP "sw<1>" LOCATE = SITE "H18" LEVEL 1;
+COMP "sw<2>" LOCATE = SITE "K18" LEVEL 1;
+COMP "hsync" LOCATE = SITE "T4" LEVEL 1;
+COMP "reset" LOCATE = SITE "R17" LEVEL 1;
+COMP "puls1" LOCATE = SITE "E18" LEVEL 1;
+COMP "puls2" LOCATE = SITE "H13" LEVEL 1;
+COMP "puls3" LOCATE = SITE "B18" LEVEL 1;
+COMP "puls4" LOCATE = SITE "D18" LEVEL 1;
+COMP "vsync" LOCATE = SITE "U3" LEVEL 1;
+COMP "rgb<0>" LOCATE = SITE "R8" LEVEL 1;
+COMP "rgb<1>" LOCATE = SITE "P6" LEVEL 1;
+COMP "rgb<2>" LOCATE = SITE "U4" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

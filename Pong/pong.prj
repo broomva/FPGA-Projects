@@ -1,0 +1,6 @@
+verilog work "vga_controller.v"
+verilog work "paddle.v"
+verilog work "colldetect.v"
+verilog work "ball.v"
+verilog work "background.v"
+verilog work "pong.v"

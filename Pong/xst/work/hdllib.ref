@@ -1,0 +1,6 @@
+MO background NULL background.v vlg64/background.bin 1432603304
+MO pong NULL pong.v vlg14/pong.bin 1432603304
+MO ball NULL ball.v vlg5B/ball.bin 1432603304
+MO paddle NULL paddle.v vlg1A/paddle.bin 1432603304
+MO vga_controller NULL vga_controller.v vlg3D/vga__controller.bin 1432603304
+MO colldetect NULL colldetect.v vlg13/colldetect.bin 1432603304

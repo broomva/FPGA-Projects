@@ -1,0 +1,39 @@
+NET "clk"    LOC= "B8";
+
+NET "sw<0>" LOC = "G18";
+NET "sw<1>" LOC = "H18";
+NET "sw<2>" LOC = "K18";
+NET "sw<3>" LOC = "K17";
+
+NET "btn<0>" LOC = "B18";
+NET "btn<1>" LOC = "D18";
+NET "btn<2>" LOC = "E18";
+NET "btn<3>" LOC = "H13";
+
+NET "led<0>" LOC = "J14";
+NET "led<1>" LOC = "J15";
+
+NET "rgb<7>" LOC = "R9";
+NET "rgb<6>" LOC = "T8";
+NET "rgb<5>" LOC = "R8";
+NET "rgb<4>" LOC = "N8";
+NET "rgb<3>" LOC = "P8";
+NET "rgb<2>" LOC = "P6";
+NET "rgb<1>" LOC = "U5";
+NET "rgb<0>" LOC = "U4";
+
+NET "hs"     LOC= "T4";
+NET "vs"     LOC= "U3";
+
+NET "seg<0>" LOC= "L18";
+NET "seg<1>" LOC= "F18";
+NET "seg<2>" LOC= "D17";
+NET "seg<3>" LOC= "D16";
+NET "seg<4>" LOC= "G14";
+NET "seg<5>" LOC= "J17";
+NET "seg<6>" LOC= "H14";
+
+NET "an<0>" LOC= "F17";
+NET "an<1>" LOC= "H17";
+NET "an<2>" LOC= "C18";
+NET "an<3>" LOC= "F15";

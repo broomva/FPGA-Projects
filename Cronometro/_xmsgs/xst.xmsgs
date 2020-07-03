@@ -1,0 +1,1522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompilers" num="93" delta="old" ><arg fmt="%s" index="1">&quot;Cronometro.v&quot; line 59 </arg>Too few port connections in instance &apos;<arg fmt="%s" index="2">Tiempo</arg>&apos; of module &apos;<arg fmt="%s" index="3">StopWatch</arg>&apos;
+</msg>
+
+<msg type="warning" file="HDLCompilers" num="261" delta="new" ><arg fmt="%s" index="1">&quot;Cronometro.v&quot; line 65 </arg>Connection to output port &apos;<arg fmt="%s" index="2">write</arg>&apos; does not match port size
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">pbshift&lt;7&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">result</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">reg_exceed</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">record_in</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">recall_mode_in</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">display_num</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0000000000000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">BtnV2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">BtnV3</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Psec_Clk</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Tiempo</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Pseg</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Tiempo</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Seg</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Tiempo</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Min</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Tiempo</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">Registros</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">Tiempo</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="info" file="Xst" num="3034" delta="old" >In order to maximize performance and save block RAM resources, the small ROM &lt;<arg fmt="%s" index="1">Mrom_segment_mux0000</arg>&gt; will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="old" >Unit &lt;<arg fmt="%s" index="1">Cronometro</arg>&gt;: instances &lt;<arg fmt="%s" index="2">BtnV2</arg>&gt;, &lt;<arg fmt="%s" index="3">BtnV3</arg>&gt; of unit &lt;<arg fmt="%s" index="4">BtnVuelta</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">BtnV2/pbreg</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Cronometro</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">BtnV2/pbshift_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Cronometro</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">BtnV2/pbshift_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Cronometro</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">BtnV2/pbshift_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Cronometro</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">BtnV2/pbshift_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Cronometro</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">BtnV2/pbshift_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Cronometro</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">BtnV2/pbshift_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Cronometro</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">BtnV2/pbshift_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Cronometro</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">BtnV2/T1/clk_1ms</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">Sieteseg/segment_7</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">Cronometro</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Sieteseg/segment_6</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">Cronometro</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Sieteseg/segment_5</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Cronometro</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Sieteseg/segment_4</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Cronometro</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Sieteseg/segment_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Cronometro</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Sieteseg/segment_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Cronometro</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Sieteseg/segment_1</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Cronometro</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1895" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Sieteseg/segment_0</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Cronometro</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Sieteseg/code_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Cronometro</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Sieteseg/code_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Cronometro</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Sieteseg/code_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Cronometro</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">Sieteseg/code_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">Cronometro</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r15/data_out_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r15/data_out_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r15/data_out_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r15/data_out_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r15/data_out_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r15/data_out_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r15/data_out_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r15/data_out_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r15/data_out_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r15/data_out_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r15/data_out_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r15/data_out_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r15/data_out_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r15/data_out_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r15/data_out_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r15/data_out_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r15/data_out_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r15/data_out_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r15/data_out_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r15/data_out_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r15/data_out_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r15/data_out_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r15/data_out_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r15/data_out_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r14/data_out_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r14/data_out_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r14/data_out_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r14/data_out_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r14/data_out_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r14/data_out_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r14/data_out_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r14/data_out_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r14/data_out_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r14/data_out_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r14/data_out_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r14/data_out_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r14/data_out_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r14/data_out_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r14/data_out_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r14/data_out_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r14/data_out_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r14/data_out_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r14/data_out_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r14/data_out_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r14/data_out_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r14/data_out_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r14/data_out_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r14/data_out_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r13/data_out_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r13/data_out_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r13/data_out_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r13/data_out_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r13/data_out_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r13/data_out_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r13/data_out_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r13/data_out_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r13/data_out_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r13/data_out_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r13/data_out_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r13/data_out_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r13/data_out_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r13/data_out_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r13/data_out_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r13/data_out_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r13/data_out_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r13/data_out_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r13/data_out_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r13/data_out_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r13/data_out_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r13/data_out_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r13/data_out_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r13/data_out_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r12/data_out_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r12/data_out_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r12/data_out_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r12/data_out_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r12/data_out_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r12/data_out_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r12/data_out_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r12/data_out_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r12/data_out_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r12/data_out_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r12/data_out_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r12/data_out_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r12/data_out_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r12/data_out_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r12/data_out_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r12/data_out_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r12/data_out_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r12/data_out_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r12/data_out_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r12/data_out_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r12/data_out_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r12/data_out_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r12/data_out_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r12/data_out_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r11/data_out_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r11/data_out_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r11/data_out_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r11/data_out_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r11/data_out_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r11/data_out_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r11/data_out_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r11/data_out_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r11/data_out_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r11/data_out_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r11/data_out_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r11/data_out_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r11/data_out_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r11/data_out_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r11/data_out_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r11/data_out_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r11/data_out_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r11/data_out_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r11/data_out_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r11/data_out_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r11/data_out_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r11/data_out_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r11/data_out_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r11/data_out_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r10/data_out_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r10/data_out_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r10/data_out_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r10/data_out_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r10/data_out_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r10/data_out_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r10/data_out_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r10/data_out_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r10/data_out_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r10/data_out_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r10/data_out_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r10/data_out_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r10/data_out_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r10/data_out_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r10/data_out_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r10/data_out_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r10/data_out_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r10/data_out_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r10/data_out_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r10/data_out_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r10/data_out_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r10/data_out_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r10/data_out_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r10/data_out_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r9/data_out_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r9/data_out_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r9/data_out_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r9/data_out_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r9/data_out_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r9/data_out_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r9/data_out_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r9/data_out_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r9/data_out_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r9/data_out_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r9/data_out_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r9/data_out_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r9/data_out_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r9/data_out_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r9/data_out_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r9/data_out_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r9/data_out_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r9/data_out_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r9/data_out_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r9/data_out_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r9/data_out_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r9/data_out_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r9/data_out_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r9/data_out_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r8/data_out_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r8/data_out_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r8/data_out_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r8/data_out_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r8/data_out_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r8/data_out_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r8/data_out_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r8/data_out_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r8/data_out_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r8/data_out_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r8/data_out_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r8/data_out_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r8/data_out_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r8/data_out_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r8/data_out_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r8/data_out_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r8/data_out_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r8/data_out_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r8/data_out_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r8/data_out_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r8/data_out_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r8/data_out_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r8/data_out_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r8/data_out_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r7/data_out_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r7/data_out_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r7/data_out_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r7/data_out_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r7/data_out_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r7/data_out_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r7/data_out_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r7/data_out_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r7/data_out_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r7/data_out_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r7/data_out_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r7/data_out_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r7/data_out_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r7/data_out_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r7/data_out_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r7/data_out_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r7/data_out_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r7/data_out_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r7/data_out_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r7/data_out_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r7/data_out_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r7/data_out_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r7/data_out_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r7/data_out_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r6/data_out_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r6/data_out_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r6/data_out_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r6/data_out_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r6/data_out_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r6/data_out_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r6/data_out_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r6/data_out_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r6/data_out_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r6/data_out_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r6/data_out_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r6/data_out_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r6/data_out_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r6/data_out_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r6/data_out_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r6/data_out_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r6/data_out_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r6/data_out_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r6/data_out_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r6/data_out_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r6/data_out_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r6/data_out_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r6/data_out_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r6/data_out_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r5/data_out_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r5/data_out_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r5/data_out_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r5/data_out_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r5/data_out_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r5/data_out_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r5/data_out_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r5/data_out_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r5/data_out_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r5/data_out_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r5/data_out_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r5/data_out_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r5/data_out_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r5/data_out_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r5/data_out_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r5/data_out_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r5/data_out_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r5/data_out_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r5/data_out_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r5/data_out_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r5/data_out_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r5/data_out_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r5/data_out_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r5/data_out_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r4/data_out_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r4/data_out_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r4/data_out_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r4/data_out_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r4/data_out_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r4/data_out_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r4/data_out_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r4/data_out_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r4/data_out_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r4/data_out_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r4/data_out_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r4/data_out_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r4/data_out_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r4/data_out_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r4/data_out_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r4/data_out_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r4/data_out_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r4/data_out_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r4/data_out_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r4/data_out_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r4/data_out_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r4/data_out_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r4/data_out_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r4/data_out_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r3/data_out_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r3/data_out_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r3/data_out_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r3/data_out_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r3/data_out_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r3/data_out_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r3/data_out_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r3/data_out_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r3/data_out_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r3/data_out_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r3/data_out_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r3/data_out_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r3/data_out_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r3/data_out_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r3/data_out_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r3/data_out_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r3/data_out_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r3/data_out_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r3/data_out_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r3/data_out_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r3/data_out_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r3/data_out_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r3/data_out_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r3/data_out_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r2/data_out_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r2/data_out_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r2/data_out_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r2/data_out_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r2/data_out_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r2/data_out_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r2/data_out_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r2/data_out_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r2/data_out_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r2/data_out_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r2/data_out_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r2/data_out_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r2/data_out_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r2/data_out_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r2/data_out_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r2/data_out_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r2/data_out_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r2/data_out_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r2/data_out_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r2/data_out_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r2/data_out_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r2/data_out_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r2/data_out_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r2/data_out_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r1/data_out_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r1/data_out_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r1/data_out_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r1/data_out_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r1/data_out_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r1/data_out_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r1/data_out_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r1/data_out_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r1/data_out_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r1/data_out_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r1/data_out_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r1/data_out_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r1/data_out_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r1/data_out_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r1/data_out_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r1/data_out_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r1/data_out_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r1/data_out_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r1/data_out_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r1/data_out_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r1/data_out_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r1/data_out_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r1/data_out_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r1/data_out_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r0/data_out_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r0/data_out_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r0/data_out_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r0/data_out_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r0/data_out_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r0/data_out_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r0/data_out_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r0/data_out_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r0/data_out_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r0/data_out_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r0/data_out_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r0/data_out_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r0/data_out_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r0/data_out_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r0/data_out_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r0/data_out_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r0/data_out_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r0/data_out_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r0/data_out_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r0/data_out_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r0/data_out_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r0/data_out_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r0/data_out_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/r0/data_out_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/m1/data_out_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/m1/data_out_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/m1/data_out_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/m1/data_out_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/m1/data_out_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/m1/data_out_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/m1/data_out_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/m1/data_out_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/m1/data_out_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/m1/data_out_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/m1/data_out_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/m1/data_out_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/m1/data_out_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/m1/data_out_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/m1/data_out_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/m1/data_out_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/m1/data_out_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/m1/data_out_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/m1/data_out_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/m1/data_out_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/m1/data_out_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/m1/data_out_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/m1/data_out_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Registros/m1/data_out_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Psec_Clk/cnt_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Psec_Clk/cnt_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Psec_Clk/cnt_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Psec_Clk/cnt_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Psec_Clk/cnt_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Psec_Clk/cnt_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Psec_Clk/cnt_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Psec_Clk/cnt_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Psec_Clk/cnt_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Psec_Clk/cnt_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Psec_Clk/cnt_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Psec_Clk/cnt_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Psec_Clk/cnt_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Psec_Clk/cnt_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Psec_Clk/cnt_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Psec_Clk/cnt_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Psec_Clk/cnt_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Psec_Clk/cnt_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Psec_Clk/cnt_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/dis_pos_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/dis_pos_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/dis_pos_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/dis_pos_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/rec_pos_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/rec_pos_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/rec_pos_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/rec_pos_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Min/min_high_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Min/min_high_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Min/min_high_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Min/min_high_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Seg/sec_low_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Seg/sec_low_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Seg/sec_low_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Seg/sec_low_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Min/min_low_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Min/min_low_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Min/min_low_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Min/min_low_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Pseg/psec_low_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Pseg/psec_low_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Pseg/psec_low_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Pseg/psec_low_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Pseg/psec_high_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Pseg/psec_high_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Pseg/psec_high_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Pseg/psec_high_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Seg/sec_high_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Seg/sec_high_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Seg/sec_high_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Seg/sec_high_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Seg/clk_min</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Pseg/clk_sec</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/Psec_Clk/clk_1ps</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">Tiempo/reset</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Cronometro</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

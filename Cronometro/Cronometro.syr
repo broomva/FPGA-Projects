@@ -1,0 +1,1277 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: Cronometro.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Cronometro.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Cronometro"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : Cronometro
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "RegistrosTiempo.v" in library work
+Compiling verilog file "Muestreo.v" in library work
+Module <RegistrosTiempo> compiled
+Compiling verilog file "Decodificador.v" in library work
+Module <Muestreo> compiled
+Compiling verilog file "Tiempo_1ps.v" in library work
+Module <Decodificador> compiled
+Compiling verilog file "Tiempo_1ms.v" in library work
+Module <Tiempo_1ps> compiled
+Compiling verilog file "Generador_Seg.v" in library work
+Module <Tiempo_1ms> compiled
+Compiling verilog file "Generador_PicoSeg.v" in library work
+Module <Generador_Seg> compiled
+Compiling verilog file "Generador_Min.v" in library work
+Module <Generador_PicoSeg> compiled
+Compiling verilog file "FicheroRegistros.v" in library work
+Module <Generador_Min> compiled
+Compiling verilog file "Tiempo.v" in library work
+Module <FicheroRegistros> compiled
+Compiling verilog file "Display.v" in library work
+Module <StopWatch> compiled
+Compiling verilog file "BtnVuelta.v" in library work
+Module <Display> compiled
+Compiling verilog file "Cronometro.v" in library work
+Module <BtnVuelta> compiled
+Module <Cronometro> compiled
+No errors in compilation
+Analysis of file <"Cronometro.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <Cronometro> in library <work>.
+
+Analyzing hierarchy for module <Display> in library <work>.
+
+Analyzing hierarchy for module <BtnVuelta> in library <work>.
+
+Analyzing hierarchy for module <StopWatch> in library <work>.
+
+Analyzing hierarchy for module <Tiempo_1ms> in library <work>.
+
+Analyzing hierarchy for module <Tiempo_1ps> in library <work>.
+
+Analyzing hierarchy for module <Generador_PicoSeg> in library <work>.
+
+Analyzing hierarchy for module <Generador_Seg> in library <work>.
+
+Analyzing hierarchy for module <Generador_Min> in library <work>.
+
+Analyzing hierarchy for module <FicheroRegistros> in library <work>.
+
+Analyzing hierarchy for module <Decodificador> in library <work>.
+
+Analyzing hierarchy for module <Muestreo> in library <work>.
+
+Analyzing hierarchy for module <RegistrosTiempo> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Cronometro>.
+Module <Cronometro> is correct for synthesis.
+ 
+Analyzing module <Display> in library <work>.
+Module <Display> is correct for synthesis.
+ 
+Analyzing module <BtnVuelta> in library <work>.
+Module <BtnVuelta> is correct for synthesis.
+ 
+Analyzing module <Tiempo_1ms> in library <work>.
+Module <Tiempo_1ms> is correct for synthesis.
+ 
+Analyzing module <StopWatch> in library <work>.
+Module <StopWatch> is correct for synthesis.
+ 
+Analyzing module <Tiempo_1ps> in library <work>.
+Module <Tiempo_1ps> is correct for synthesis.
+ 
+Analyzing module <Generador_PicoSeg> in library <work>.
+Module <Generador_PicoSeg> is correct for synthesis.
+ 
+Analyzing module <Generador_Seg> in library <work>.
+Module <Generador_Seg> is correct for synthesis.
+ 
+Analyzing module <Generador_Min> in library <work>.
+Module <Generador_Min> is correct for synthesis.
+ 
+Analyzing module <FicheroRegistros> in library <work>.
+Module <FicheroRegistros> is correct for synthesis.
+ 
+Analyzing module <Decodificador> in library <work>.
+Module <Decodificador> is correct for synthesis.
+ 
+Analyzing module <Muestreo> in library <work>.
+Module <Muestreo> is correct for synthesis.
+ 
+Analyzing module <RegistrosTiempo> in library <work>.
+Module <RegistrosTiempo> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Display>.
+    Related source file is "Display.v".
+    Found 16x8-bit ROM for signal <segment$mux0000> created at line 30.
+    Found 4-bit register for signal <node>.
+    Found 8-bit register for signal <segment>.
+    Found 4-bit register for signal <code>.
+    Found 4-bit 4-to-1 multiplexer for signal <code$mux0000> created at line 12.
+    Found 16-bit up counter for signal <count>.
+    Found 1-of-4 decoder for signal <node$mux0000> created at line 12.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   1 Counter(s).
+	inferred  16 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+	inferred   1 Decoder(s).
+Unit <Display> synthesized.
+
+
+Synthesizing Unit <Tiempo_1ms>.
+    Related source file is "Tiempo_1ms.v".
+    Found 1-bit register for signal <clk_1ms>.
+    Found 16-bit up counter for signal <cnt>.
+    Found 16-bit comparator greatequal for signal <cnt$cmp_ge0000> created at line 13.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <Tiempo_1ms> synthesized.
+
+
+Synthesizing Unit <Tiempo_1ps>.
+    Related source file is "Tiempo_1ps.v".
+    Found 1-bit register for signal <clk_1ps>.
+    Found 19-bit up counter for signal <cnt>.
+    Found 19-bit comparator greatequal for signal <cnt$cmp_ge0000> created at line 13.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <Tiempo_1ps> synthesized.
+
+
+Synthesizing Unit <Generador_PicoSeg>.
+    Related source file is "Generador_PicoSeg.v".
+    Found 4-bit up counter for signal <psec_low>.
+    Found 1-bit register for signal <clk_sec>.
+    Found 4-bit up counter for signal <psec_high>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <Generador_PicoSeg> synthesized.
+
+
+Synthesizing Unit <Generador_Seg>.
+    Related source file is "Generador_Seg.v".
+    Found 1-bit register for signal <clk_min>.
+    Found 4-bit up counter for signal <sec_low>.
+    Found 4-bit up counter for signal <sec_high>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <Generador_Seg> synthesized.
+
+
+Synthesizing Unit <Generador_Min>.
+    Related source file is "Generador_Min.v".
+    Found 4-bit up counter for signal <min_low>.
+    Found 4-bit up counter for signal <min_high>.
+    Summary:
+	inferred   2 Counter(s).
+Unit <Generador_Min> synthesized.
+
+
+Synthesizing Unit <Decodificador>.
+    Related source file is "Decodificador.v".
+Unit <Decodificador> synthesized.
+
+
+Synthesizing Unit <Muestreo>.
+    Related source file is "Muestreo.v".
+    Found 24-bit register for signal <data_out>.
+    Found 24-bit 16-to-1 multiplexer for signal <data_out$mux0000> created at line 11.
+    Summary:
+	inferred  24 D-type flip-flop(s).
+	inferred  24 Multiplexer(s).
+Unit <Muestreo> synthesized.
+
+
+Synthesizing Unit <RegistrosTiempo>.
+    Related source file is "RegistrosTiempo.v".
+    Found 24-bit register for signal <data_out>.
+    Summary:
+	inferred  24 D-type flip-flop(s).
+Unit <RegistrosTiempo> synthesized.
+
+
+Synthesizing Unit <BtnVuelta>.
+    Related source file is "BtnVuelta.v".
+WARNING:Xst:646 - Signal <pbshift<7>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <pbreg>.
+    Found 7-bit register for signal <pbshift<6:0>>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <BtnVuelta> synthesized.
+
+
+Synthesizing Unit <FicheroRegistros>.
+    Related source file is "FicheroRegistros.v".
+Unit <FicheroRegistros> synthesized.
+
+
+Synthesizing Unit <StopWatch>.
+    Related source file is "Tiempo.v".
+    Found 1-bit register for signal <started>.
+    Found 1-bit register for signal <paused>.
+    Found 4-bit up counter for signal <dis_pos>.
+    Found 4-bit comparator equal for signal <dis_pos$cmp_eq0000> created at line 32.
+    Found 4-bit up counter for signal <rec_pos>.
+    Found 4-bit comparator greater for signal <reg_exceed$cmp_gt0000> created at line 61.
+    Found 1-bit register for signal <reset>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   3 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <StopWatch> synthesized.
+
+
+Synthesizing Unit <Cronometro>.
+    Related source file is "Cronometro.v".
+WARNING:Xst:646 - Signal <result> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <reg_exceed> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <record_in> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <recall_mode_in> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <display_num> is used but never assigned. This sourceless signal will be automatically connected to value 0000000000000000.
+Unit <Cronometro> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Counters                                             : 14
+ 16-bit up counter                                     : 5
+ 19-bit up counter                                     : 1
+ 4-bit up counter                                      : 8
+# Registers                                            : 62
+ 1-bit register                                        : 42
+ 24-bit register                                       : 17
+ 4-bit register                                        : 2
+ 8-bit register                                        : 1
+# Comparators                                          : 7
+ 16-bit comparator greatequal                          : 4
+ 19-bit comparator greatequal                          : 1
+ 4-bit comparator equal                                : 1
+ 4-bit comparator greater                              : 1
+# Multiplexers                                         : 2
+ 24-bit 16-to-1 multiplexer                            : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <BtnV2> is unconnected in block <Cronometro>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <BtnV3> is unconnected in block <Cronometro>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Psec_Clk> is unconnected in block <Tiempo>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Pseg> is unconnected in block <Tiempo>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Seg> is unconnected in block <Tiempo>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Min> is unconnected in block <Tiempo>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Registros> is unconnected in block <Tiempo>.
+   It will be removed from the design.
+
+Synthesizing (advanced) Unit <Display>.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_segment_mux0000> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+Unit <Display> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Counters                                             : 14
+ 16-bit up counter                                     : 5
+ 19-bit up counter                                     : 1
+ 4-bit up counter                                      : 8
+# Registers                                            : 466
+ Flip-Flops                                            : 466
+# Comparators                                          : 7
+ 16-bit comparator greatequal                          : 4
+ 19-bit comparator greatequal                          : 1
+ 4-bit comparator equal                                : 1
+ 4-bit comparator greater                              : 1
+# Multiplexers                                         : 2
+ 24-bit 16-to-1 multiplexer                            : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1989 - Unit <Cronometro>: instances <BtnV2>, <BtnV3> of unit <BtnVuelta> are equivalent, second instance is removed
+WARNING:Xst:1710 - FF/Latch <BtnV2/pbreg> (without init value) has a constant value of 0 in block <Cronometro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <BtnV2/pbshift_0> (without init value) has a constant value of 0 in block <Cronometro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <BtnV2/pbshift_1> (without init value) has a constant value of 0 in block <Cronometro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <BtnV2/pbshift_2> (without init value) has a constant value of 0 in block <Cronometro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <BtnV2/pbshift_3> (without init value) has a constant value of 0 in block <Cronometro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <BtnV2/pbshift_4> (without init value) has a constant value of 0 in block <Cronometro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <BtnV2/pbshift_5> (without init value) has a constant value of 0 in block <Cronometro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <BtnV2/pbshift_6> (without init value) has a constant value of 0 in block <Cronometro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <BtnV2/T1/clk_1ms> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:1710 - FF/Latch <Sieteseg/segment_7> (without init value) has a constant value of 1 in block <Cronometro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Sieteseg/segment_6> (without init value) has a constant value of 1 in block <Cronometro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Sieteseg/segment_5> (without init value) has a constant value of 0 in block <Cronometro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Sieteseg/segment_4> (without init value) has a constant value of 0 in block <Cronometro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Sieteseg/segment_3> (without init value) has a constant value of 0 in block <Cronometro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Sieteseg/segment_2> (without init value) has a constant value of 0 in block <Cronometro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Sieteseg/segment_1> (without init value) has a constant value of 0 in block <Cronometro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Sieteseg/segment_0> (without init value) has a constant value of 0 in block <Cronometro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Sieteseg/code_3> has a constant value of 0 in block <Cronometro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Sieteseg/code_2> has a constant value of 0 in block <Cronometro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Sieteseg/code_1> has a constant value of 0 in block <Cronometro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Sieteseg/code_0> has a constant value of 0 in block <Cronometro>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <Cronometro> ...
+
+Optimizing unit <Muestreo> ...
+
+Optimizing unit <FicheroRegistros> ...
+
+Optimizing unit <StopWatch> ...
+WARNING:Xst:2677 - Node <Tiempo/Registros/r15/data_out_23> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r15/data_out_22> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r15/data_out_21> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r15/data_out_20> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r15/data_out_19> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r15/data_out_18> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r15/data_out_17> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r15/data_out_16> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r15/data_out_15> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r15/data_out_14> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r15/data_out_13> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r15/data_out_12> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r15/data_out_11> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r15/data_out_10> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r15/data_out_9> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r15/data_out_8> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r15/data_out_7> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r15/data_out_6> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r15/data_out_5> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r15/data_out_4> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r15/data_out_3> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r15/data_out_2> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r15/data_out_1> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r15/data_out_0> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r14/data_out_23> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r14/data_out_22> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r14/data_out_21> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r14/data_out_20> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r14/data_out_19> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r14/data_out_18> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r14/data_out_17> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r14/data_out_16> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r14/data_out_15> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r14/data_out_14> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r14/data_out_13> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r14/data_out_12> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r14/data_out_11> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r14/data_out_10> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r14/data_out_9> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r14/data_out_8> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r14/data_out_7> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r14/data_out_6> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r14/data_out_5> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r14/data_out_4> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r14/data_out_3> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r14/data_out_2> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r14/data_out_1> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r14/data_out_0> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r13/data_out_23> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r13/data_out_22> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r13/data_out_21> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r13/data_out_20> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r13/data_out_19> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r13/data_out_18> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r13/data_out_17> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r13/data_out_16> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r13/data_out_15> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r13/data_out_14> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r13/data_out_13> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r13/data_out_12> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r13/data_out_11> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r13/data_out_10> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r13/data_out_9> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r13/data_out_8> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r13/data_out_7> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r13/data_out_6> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r13/data_out_5> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r13/data_out_4> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r13/data_out_3> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r13/data_out_2> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r13/data_out_1> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r13/data_out_0> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r12/data_out_23> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r12/data_out_22> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r12/data_out_21> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r12/data_out_20> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r12/data_out_19> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r12/data_out_18> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r12/data_out_17> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r12/data_out_16> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r12/data_out_15> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r12/data_out_14> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r12/data_out_13> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r12/data_out_12> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r12/data_out_11> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r12/data_out_10> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r12/data_out_9> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r12/data_out_8> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r12/data_out_7> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r12/data_out_6> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r12/data_out_5> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r12/data_out_4> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r12/data_out_3> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r12/data_out_2> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r12/data_out_1> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r12/data_out_0> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r11/data_out_23> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r11/data_out_22> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r11/data_out_21> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r11/data_out_20> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r11/data_out_19> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r11/data_out_18> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r11/data_out_17> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r11/data_out_16> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r11/data_out_15> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r11/data_out_14> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r11/data_out_13> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r11/data_out_12> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r11/data_out_11> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r11/data_out_10> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r11/data_out_9> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r11/data_out_8> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r11/data_out_7> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r11/data_out_6> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r11/data_out_5> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r11/data_out_4> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r11/data_out_3> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r11/data_out_2> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r11/data_out_1> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r11/data_out_0> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r10/data_out_23> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r10/data_out_22> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r10/data_out_21> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r10/data_out_20> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r10/data_out_19> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r10/data_out_18> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r10/data_out_17> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r10/data_out_16> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r10/data_out_15> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r10/data_out_14> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r10/data_out_13> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r10/data_out_12> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r10/data_out_11> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r10/data_out_10> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r10/data_out_9> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r10/data_out_8> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r10/data_out_7> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r10/data_out_6> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r10/data_out_5> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r10/data_out_4> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r10/data_out_3> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r10/data_out_2> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r10/data_out_1> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r10/data_out_0> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r9/data_out_23> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r9/data_out_22> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r9/data_out_21> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r9/data_out_20> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r9/data_out_19> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r9/data_out_18> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r9/data_out_17> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r9/data_out_16> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r9/data_out_15> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r9/data_out_14> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r9/data_out_13> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r9/data_out_12> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r9/data_out_11> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r9/data_out_10> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r9/data_out_9> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r9/data_out_8> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r9/data_out_7> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r9/data_out_6> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r9/data_out_5> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r9/data_out_4> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r9/data_out_3> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r9/data_out_2> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r9/data_out_1> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r9/data_out_0> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r8/data_out_23> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r8/data_out_22> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r8/data_out_21> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r8/data_out_20> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r8/data_out_19> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r8/data_out_18> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r8/data_out_17> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r8/data_out_16> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r8/data_out_15> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r8/data_out_14> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r8/data_out_13> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r8/data_out_12> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r8/data_out_11> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r8/data_out_10> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r8/data_out_9> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r8/data_out_8> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r8/data_out_7> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r8/data_out_6> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r8/data_out_5> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r8/data_out_4> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r8/data_out_3> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r8/data_out_2> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r8/data_out_1> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r8/data_out_0> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r7/data_out_23> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r7/data_out_22> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r7/data_out_21> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r7/data_out_20> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r7/data_out_19> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r7/data_out_18> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r7/data_out_17> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r7/data_out_16> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r7/data_out_15> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r7/data_out_14> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r7/data_out_13> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r7/data_out_12> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r7/data_out_11> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r7/data_out_10> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r7/data_out_9> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r7/data_out_8> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r7/data_out_7> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r7/data_out_6> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r7/data_out_5> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r7/data_out_4> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r7/data_out_3> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r7/data_out_2> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r7/data_out_1> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r7/data_out_0> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r6/data_out_23> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r6/data_out_22> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r6/data_out_21> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r6/data_out_20> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r6/data_out_19> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r6/data_out_18> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r6/data_out_17> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r6/data_out_16> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r6/data_out_15> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r6/data_out_14> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r6/data_out_13> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r6/data_out_12> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r6/data_out_11> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r6/data_out_10> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r6/data_out_9> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r6/data_out_8> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r6/data_out_7> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r6/data_out_6> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r6/data_out_5> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r6/data_out_4> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r6/data_out_3> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r6/data_out_2> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r6/data_out_1> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r6/data_out_0> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r5/data_out_23> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r5/data_out_22> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r5/data_out_21> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r5/data_out_20> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r5/data_out_19> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r5/data_out_18> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r5/data_out_17> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r5/data_out_16> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r5/data_out_15> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r5/data_out_14> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r5/data_out_13> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r5/data_out_12> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r5/data_out_11> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r5/data_out_10> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r5/data_out_9> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r5/data_out_8> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r5/data_out_7> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r5/data_out_6> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r5/data_out_5> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r5/data_out_4> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r5/data_out_3> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r5/data_out_2> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r5/data_out_1> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r5/data_out_0> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r4/data_out_23> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r4/data_out_22> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r4/data_out_21> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r4/data_out_20> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r4/data_out_19> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r4/data_out_18> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r4/data_out_17> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r4/data_out_16> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r4/data_out_15> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r4/data_out_14> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r4/data_out_13> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r4/data_out_12> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r4/data_out_11> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r4/data_out_10> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r4/data_out_9> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r4/data_out_8> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r4/data_out_7> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r4/data_out_6> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r4/data_out_5> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r4/data_out_4> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r4/data_out_3> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r4/data_out_2> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r4/data_out_1> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r4/data_out_0> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r3/data_out_23> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r3/data_out_22> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r3/data_out_21> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r3/data_out_20> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r3/data_out_19> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r3/data_out_18> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r3/data_out_17> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r3/data_out_16> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r3/data_out_15> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r3/data_out_14> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r3/data_out_13> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r3/data_out_12> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r3/data_out_11> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r3/data_out_10> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r3/data_out_9> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r3/data_out_8> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r3/data_out_7> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r3/data_out_6> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r3/data_out_5> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r3/data_out_4> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r3/data_out_3> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r3/data_out_2> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r3/data_out_1> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r3/data_out_0> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r2/data_out_23> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r2/data_out_22> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r2/data_out_21> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r2/data_out_20> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r2/data_out_19> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r2/data_out_18> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r2/data_out_17> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r2/data_out_16> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r2/data_out_15> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r2/data_out_14> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r2/data_out_13> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r2/data_out_12> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r2/data_out_11> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r2/data_out_10> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r2/data_out_9> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r2/data_out_8> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r2/data_out_7> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r2/data_out_6> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r2/data_out_5> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r2/data_out_4> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r2/data_out_3> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r2/data_out_2> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r2/data_out_1> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r2/data_out_0> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r1/data_out_23> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r1/data_out_22> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r1/data_out_21> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r1/data_out_20> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r1/data_out_19> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r1/data_out_18> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r1/data_out_17> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r1/data_out_16> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r1/data_out_15> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r1/data_out_14> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r1/data_out_13> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r1/data_out_12> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r1/data_out_11> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r1/data_out_10> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r1/data_out_9> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r1/data_out_8> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r1/data_out_7> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r1/data_out_6> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r1/data_out_5> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r1/data_out_4> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r1/data_out_3> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r1/data_out_2> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r1/data_out_1> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r1/data_out_0> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r0/data_out_23> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r0/data_out_22> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r0/data_out_21> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r0/data_out_20> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r0/data_out_19> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r0/data_out_18> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r0/data_out_17> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r0/data_out_16> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r0/data_out_15> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r0/data_out_14> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r0/data_out_13> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r0/data_out_12> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r0/data_out_11> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r0/data_out_10> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r0/data_out_9> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r0/data_out_8> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r0/data_out_7> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r0/data_out_6> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r0/data_out_5> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r0/data_out_4> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r0/data_out_3> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r0/data_out_2> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r0/data_out_1> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/r0/data_out_0> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/m1/data_out_23> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/m1/data_out_22> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/m1/data_out_21> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/m1/data_out_20> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/m1/data_out_19> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/m1/data_out_18> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/m1/data_out_17> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/m1/data_out_16> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/m1/data_out_15> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/m1/data_out_14> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/m1/data_out_13> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/m1/data_out_12> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/m1/data_out_11> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/m1/data_out_10> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/m1/data_out_9> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/m1/data_out_8> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/m1/data_out_7> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/m1/data_out_6> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/m1/data_out_5> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/m1/data_out_4> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/m1/data_out_3> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/m1/data_out_2> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/m1/data_out_1> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Registros/m1/data_out_0> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Psec_Clk/cnt_18> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Psec_Clk/cnt_17> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Psec_Clk/cnt_16> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Psec_Clk/cnt_15> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Psec_Clk/cnt_14> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Psec_Clk/cnt_13> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Psec_Clk/cnt_12> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Psec_Clk/cnt_11> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Psec_Clk/cnt_10> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Psec_Clk/cnt_9> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Psec_Clk/cnt_8> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Psec_Clk/cnt_7> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Psec_Clk/cnt_6> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Psec_Clk/cnt_5> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Psec_Clk/cnt_4> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Psec_Clk/cnt_3> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Psec_Clk/cnt_2> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Psec_Clk/cnt_1> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Psec_Clk/cnt_0> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/dis_pos_3> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/dis_pos_2> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/dis_pos_1> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/dis_pos_0> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/rec_pos_3> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/rec_pos_2> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/rec_pos_1> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/rec_pos_0> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Min/min_high_3> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Min/min_high_2> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Min/min_high_1> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Min/min_high_0> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Seg/sec_low_3> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Seg/sec_low_2> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Seg/sec_low_1> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Seg/sec_low_0> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Min/min_low_3> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Min/min_low_2> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Min/min_low_1> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Min/min_low_0> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Pseg/psec_low_3> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Pseg/psec_low_2> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Pseg/psec_low_1> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Pseg/psec_low_0> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Pseg/psec_high_3> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Pseg/psec_high_2> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Pseg/psec_high_1> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Pseg/psec_high_0> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Seg/sec_high_3> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Seg/sec_high_2> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Seg/sec_high_1> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Seg/sec_high_0> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Seg/clk_min> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Pseg/clk_sec> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/Psec_Clk/clk_1ps> of sequential type is unconnected in block <Cronometro>.
+WARNING:Xst:2677 - Node <Tiempo/reset> of sequential type is unconnected in block <Cronometro>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Cronometro, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 72
+ Flip-Flops                                            : 72
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Cronometro.ngr
+Top Level Output File Name         : Cronometro
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 21
+
+Cell Usage :
+# BELS                             : 192
+#      GND                         : 1
+#      INV                         : 13
+#      LUT1                        : 49
+#      LUT2                        : 7
+#      LUT3                        : 2
+#      LUT4                        : 6
+#      LUT4_L                      : 4
+#      MUXCY                       : 61
+#      VCC                         : 1
+#      XORCY                       : 48
+# FlipFlops/Latches                : 72
+#      FD                          : 31
+#      FDE                         : 2
+#      FDR                         : 34
+#      FDS                         : 5
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 16
+#      IBUF                        : 2
+#      OBUF                        : 14
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       49  out of   4656     1%  
+ Number of Slice Flip Flops:             72  out of   9312     0%  
+ Number of 4 input LUTs:                 81  out of   9312     0%  
+ Number of IOs:                          21
+ Number of bonded IOBs:                  17  out of    232     7%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 54    |
+BtnV1/T1/clk_1ms                   | NONE(BtnV1/pbshift_6)  | 8     |
+BtnV0/T1/clk_1ms                   | NONE(BtnV0/pbshift_6)  | 8     |
+BtnV1/pbreg                        | NONE(Tiempo/paused)    | 1     |
+BtnV0/pbreg                        | NONE(Tiempo/started)   | 1     |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 5.028ns (Maximum Frequency: 198.886MHz)
+   Minimum input arrival time before clock: 4.938ns
+   Maximum output required time after clock: 4.310ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.028ns (frequency: 198.886MHz)
+  Total number of paths / destination ports: 860 / 91
+-------------------------------------------------------------------------
+Delay:               5.028ns (Levels of Logic = 9)
+  Source:            BtnV1/T1/cnt_3 (FF)
+  Destination:       BtnV1/T1/cnt_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: BtnV1/T1/cnt_3 to BtnV1/T1/cnt_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.622  BtnV1/T1/cnt_3 (BtnV1/T1/cnt_3)
+     LUT1:I0->O            1   0.704   0.000  BtnV1/T1/Mcompar_cnt_cmp_ge0000_cy<0>_rt (BtnV1/T1/Mcompar_cnt_cmp_ge0000_cy<0>_rt)
+     MUXCY:S->O            1   0.464   0.000  BtnV1/T1/Mcompar_cnt_cmp_ge0000_cy<0> (BtnV1/T1/Mcompar_cnt_cmp_ge0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  BtnV1/T1/Mcompar_cnt_cmp_ge0000_cy<1> (BtnV1/T1/Mcompar_cnt_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  BtnV1/T1/Mcompar_cnt_cmp_ge0000_cy<2> (BtnV1/T1/Mcompar_cnt_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  BtnV1/T1/Mcompar_cnt_cmp_ge0000_cy<3> (BtnV1/T1/Mcompar_cnt_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  BtnV1/T1/Mcompar_cnt_cmp_ge0000_cy<4> (BtnV1/T1/Mcompar_cnt_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  BtnV1/T1/Mcompar_cnt_cmp_ge0000_cy<5> (BtnV1/T1/Mcompar_cnt_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  BtnV1/T1/Mcompar_cnt_cmp_ge0000_cy<6> (BtnV1/T1/Mcompar_cnt_cmp_ge0000_cy<6>)
+     MUXCY:CI->O          17   0.331   1.051  BtnV1/T1/Mcompar_cnt_cmp_ge0000_cy<7> (BtnV1/T1/cnt_cmp_ge0000)
+     FDR:R                     0.911          BtnV1/T1/cnt_0
+    ----------------------------------------
+    Total                      5.028ns (3.355ns logic, 1.673ns route)
+                                       (66.7% logic, 33.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'BtnV1/T1/clk_1ms'
+  Clock period: 4.451ns (frequency: 224.669MHz)
+  Total number of paths / destination ports: 21 / 8
+-------------------------------------------------------------------------
+Delay:               4.451ns (Levels of Logic = 2)
+  Source:            BtnV1/pbshift_6 (FF)
+  Destination:       BtnV1/pbreg (FF)
+  Source Clock:      BtnV1/T1/clk_1ms rising
+  Destination Clock: BtnV1/T1/clk_1ms rising
+
+  Data Path: BtnV1/pbshift_6 to BtnV1/pbreg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.622  BtnV1/pbshift_6 (BtnV1/pbshift_6)
+     LUT4:I0->O            1   0.704   0.499  BtnV1/pbreg_mux000034 (BtnV1/pbreg_mux000034)
+     LUT2:I1->O            1   0.704   0.420  BtnV1/pbreg_mux000035 (BtnV1/pbreg_mux000035)
+     FDS:S                     0.911          BtnV1/pbreg
+    ----------------------------------------
+    Total                      4.451ns (2.910ns logic, 1.541ns route)
+                                       (65.4% logic, 34.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'BtnV0/T1/clk_1ms'
+  Clock period: 4.451ns (frequency: 224.669MHz)
+  Total number of paths / destination ports: 21 / 8
+-------------------------------------------------------------------------
+Delay:               4.451ns (Levels of Logic = 2)
+  Source:            BtnV0/pbshift_6 (FF)
+  Destination:       BtnV0/pbreg (FF)
+  Source Clock:      BtnV0/T1/clk_1ms rising
+  Destination Clock: BtnV0/T1/clk_1ms rising
+
+  Data Path: BtnV0/pbshift_6 to BtnV0/pbreg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.622  BtnV0/pbshift_6 (BtnV0/pbshift_6)
+     LUT4:I0->O            1   0.704   0.499  BtnV0/pbreg_mux000034 (BtnV0/pbreg_mux000034)
+     LUT2:I1->O            1   0.704   0.420  BtnV0/pbreg_mux000035 (BtnV0/pbreg_mux000035)
+     FDS:S                     0.911          BtnV0/pbreg
+    ----------------------------------------
+    Total                      4.451ns (2.910ns logic, 1.541ns route)
+                                       (65.4% logic, 34.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'BtnV1/pbreg'
+  Clock period: 1.949ns (frequency: 513.084MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.949ns (Levels of Logic = 0)
+  Source:            Tiempo/paused (FF)
+  Destination:       Tiempo/paused (FF)
+  Source Clock:      BtnV1/pbreg rising
+  Destination Clock: BtnV1/pbreg rising
+
+  Data Path: Tiempo/paused to Tiempo/paused
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.447  Tiempo/paused (Tiempo/paused)
+     FDR:R                     0.911          Tiempo/paused
+    ----------------------------------------
+    Total                      1.949ns (1.502ns logic, 0.447ns route)
+                                       (77.1% logic, 22.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'BtnV0/pbreg'
+  Clock period: 1.949ns (frequency: 513.084MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.949ns (Levels of Logic = 0)
+  Source:            Tiempo/started (FF)
+  Destination:       Tiempo/started (FF)
+  Source Clock:      BtnV0/pbreg rising
+  Destination Clock: BtnV0/pbreg rising
+
+  Data Path: Tiempo/started to Tiempo/started
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.447  Tiempo/started (Tiempo/started)
+     FDR:R                     0.911          Tiempo/started
+    ----------------------------------------
+    Total                      1.949ns (1.502ns logic, 0.447ns route)
+                                       (77.1% logic, 22.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'BtnV1/T1/clk_1ms'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              4.938ns (Levels of Logic = 3)
+  Source:            pause_in (PAD)
+  Destination:       BtnV1/pbreg (FF)
+  Destination Clock: BtnV1/T1/clk_1ms rising
+
+  Data Path: pause_in to BtnV1/pbreg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.218   0.706  pause_in_IBUF (pause_in_IBUF)
+     LUT4_L:I0->LO         1   0.704   0.275  BtnV1/pbreg_mux000029 (BtnV1/pbreg_mux000029)
+     LUT2:I0->O            1   0.704   0.420  BtnV1/pbreg_mux000035 (BtnV1/pbreg_mux000035)
+     FDS:S                     0.911          BtnV1/pbreg
+    ----------------------------------------
+    Total                      4.938ns (3.537ns logic, 1.401ns route)
+                                       (71.6% logic, 28.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'BtnV0/T1/clk_1ms'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              4.938ns (Levels of Logic = 3)
+  Source:            start_in (PAD)
+  Destination:       BtnV0/pbreg (FF)
+  Destination Clock: BtnV0/T1/clk_1ms rising
+
+  Data Path: start_in to BtnV0/pbreg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.218   0.706  start_in_IBUF (start_in_IBUF)
+     LUT4_L:I0->LO         1   0.704   0.275  BtnV0/pbreg_mux000029 (BtnV0/pbreg_mux000029)
+     LUT2:I0->O            1   0.704   0.420  BtnV0/pbreg_mux000035 (BtnV0/pbreg_mux000035)
+     FDS:S                     0.911          BtnV0/pbreg
+    ----------------------------------------
+    Total                      4.938ns (3.537ns logic, 1.401ns route)
+                                       (71.6% logic, 28.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'BtnV1/pbreg'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.310ns (Levels of Logic = 1)
+  Source:            Tiempo/paused (FF)
+  Destination:       paused_LED (PAD)
+  Source Clock:      BtnV1/pbreg rising
+
+  Data Path: Tiempo/paused to paused_LED
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.447  Tiempo/paused (Tiempo/paused)
+     OBUF:I->O                 3.272          paused_LED_OBUF (paused_LED)
+    ----------------------------------------
+    Total                      4.310ns (3.863ns logic, 0.447ns route)
+                                       (89.6% logic, 10.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'BtnV0/pbreg'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.310ns (Levels of Logic = 1)
+  Source:            Tiempo/started (FF)
+  Destination:       started_LED (PAD)
+  Source Clock:      BtnV0/pbreg rising
+
+  Data Path: Tiempo/started to started_LED
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.447  Tiempo/started (Tiempo/started)
+     OBUF:I->O                 3.272          started_LED_OBUF (started_LED)
+    ----------------------------------------
+    Total                      4.310ns (3.863ns logic, 0.447ns route)
+                                       (89.6% logic, 10.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 1)
+  Source:            Sieteseg/node_3 (FF)
+  Destination:       anode<3> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: Sieteseg/node_3 to anode<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.591   0.420  Sieteseg/node_3 (Sieteseg/node_3)
+     OBUF:I->O                 3.272          anode_3_OBUF (anode<3>)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.29 secs
+ 
+--> 
+
+Total memory usage is 248516 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  500 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+
